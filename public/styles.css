@@ -1,0 +1,229 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-shadow: 1px 1px 1px 1px #dfdddd;
+}
+
+.main-heading {
+  position: relative;
+  top: 0;
+  z-index: 3;
+  line-height: 45px;
+  vertical-align: middle;
+  width: 100%;
+  background-color: #041b43;
+  text-align: center;
+  font-family: myriad-pro, Futura, Optima, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #dff4f8;
+}
+
+.yellowstar {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 16px;
+  justify-content: left;
+  float: left;
+  vertical-align: middle;
+}
+
+.purchase-summary-box {
+  width: 200px;
+  position: relative;
+  top: -10px;
+  z-index: 1;
+  background-color: #fff;
+  border: solid 1px;
+  border-width: 0.5 1px;
+  border-top: none;
+  border-color: #dfdddd;
+  border-radius: 7.5px;
+  float: right;
+  box-shadow: 1px 1px 1px 1px #dfdddd;
+  padding: 16px;
+  padding-bottom: 22px;
+  margin-right: 65px;
+}
+
+.purchase-summary-styles {
+  /* line-height: 40px; */
+}
+
+.purchase-summary-text {
+  font-family: Futura, Optima, sans-serif;
+  color: #333;
+  text-align: left;
+  font-size: 13.5px;
+}
+
+.pricingBox {
+  padding: 4px;
+  line-height: 1.25;
+}
+
+.section {
+  border-top: solid 1px;
+  border-color: #dfdddd;
+}
+
+.expandable {
+  margin-right: 10px;
+  line-height: 40px;
+  text-decoration: underline;
+}
+
+.expandable:hover {
+  cursor: pointer;
+}
+
+/* .expandable:active {
+  border: solid 1px #333;
+} */
+
+.pickup-savings {
+  border-top: none;
+  text-decoration: underline;
+}
+
+.pickup-savings:hover {
+  cursor: pointer;
+}
+
+.total {
+  font-family: myriad-pro, Futura, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.see-item-details {
+}
+
+/* .itemDetailsBox {
+  padding: 4px;
+} */
+
+.item {
+  width: 100px;
+  height: 150px;
+  font-weight: bold;
+}
+
+.originalPrice {
+  color: #929090;
+  text-decoration: line-through;
+}
+
+.apply-promo-code {
+}
+
+.promo {
+  color: #929090;
+  text-decoration: none;
+}
+
+label {
+  padding-left: 10px;
+}
+
+input {
+  margin: 4px;
+  width: 120px;
+  height: 22px;
+  padding: 3px;
+  font-family: Futura, sans-serif;
+  font-size: 14px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  vertical-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+.button {
+  margin: 4px;
+  padding: 6px;
+  border: solid 1px;
+  border-color: #333;
+  border-radius: 13px;
+  font-family: Futura, myriad-pro, sans-serif;
+  font-size: 12px;
+  vertical-align: center;
+}
+
+button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 22px;
+  padding-left: 12px;
+  font-family: myriad-pro, Geneva, sans-serif;
+  font-size: 12.5px;
+  color: #333;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  font: normal normal 85% sans-serif;
+  color: #333;
+  display: inline-block;
+}
+
+.tooltip > i {
+  text-align: left;
+  font: normal 90% myriad-pro, sans-serif;
+  line-height: 150%;
+  color: #333;
+  background: #ccc;
+  background-clip: padding-box;
+  border: 10px solid #f1f1f1;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: absolute;
+  width: 180px;
+  left: 50%;
+  margin-left: -125px;
+  padding: 10px;
+  bottom: 100%;
+  margin-bottom: 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.tooltip > i:before,
+a > i:after {
+  content: "";
+  position: absolute;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.tooltip > i:before {
+  border-top: 2px solid #333;
+  border-top: 9.5px solid rgba(0, 0, 0, 0.5);
+  margin-top: 0px;
+}
+
+.tooltip > i:after {
+  border-top: 11px solid #fff;
+  margin-top: -2px;
+  z-index: 1;
+}
+
+.tooltip:hover > i {
+  visibility: visible;
+  opacity: 1;
+}
